@@ -34,6 +34,28 @@ public class MainActivity extends AppCompatActivity {
 
     public void go(View view)
     {
+        do
+        {
+            x = num;
+            num = rnd.nextInt(3) + 1;
+        }
+        while (num==x);
 
+
+        if (num == 1)
+        {
+            iView.setImageResource(R.drawable.ex0606namber1);
+            btn.setBackgroundResource(R.drawable.ex0606namber1);
+        }
+        else if (num == 2)
+        {
+            iView.setImageResource(R.drawable.ex0606namber2);
+            btn.setBackgroundResource(R.drawable.ex0606namber2);
+        }
+        else
+        {
+            iView.setImageResource(R.drawable.ex0606namber3);
+            btn.setBackgroundResource(R.drawable.ex0606namber3);
+        }
     }
 }
